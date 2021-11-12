@@ -1,0 +1,22 @@
+* {
+  margin: auto;
+}
+h1 {
+  text-align: center;
+}
+.calculator {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: fit-content;
+}
+table,
+tr,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  background-color: rgb(128, 228, 228);
+}
