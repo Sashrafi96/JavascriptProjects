@@ -34,7 +34,7 @@ function calc() {
   }
 }
 
-function clear() {
-  alert("inside clear function");
+function clrScr() {
+  //alert("inside clear function");
   document.getElementById("res").value = "";
 }
