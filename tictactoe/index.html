@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="tictac.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TIC TAC TOE</h1>
+        <br><br>
+        <!-- Game Instructions -->
+        <h3 class="player">Game starts by just Tap on
+            box<br><br>First Player starts as
+            <b class="green">Player X</b><br>And<br>Second
+            Player as <b class="green">Player 0</b>
+        </h3>
+        <br><br>
+
+        <!-- 3*3 grid of Boxes -->
+
+        <input type="text" id="b1" onclick="func_1(); checkfunc()">
+
+        <input type="text" id="b2" onclick="func_2(); checkfunc()">
+
+        <input type="text" id="b3" onclick="func_3(); checkfunc()">
+        <br><br>
+
+        <input type="text" id="b4" onclick="func_4(); checkfunc()">
+
+        <input type="text" id="b5" onclick="func_5(); checkfunc()">
+
+        <input type="text" id="b6" onclick="func_6(); checkfunc()">
+        <br><br>
+
+        <input type="text" id="b7" onclick="func_7(); checkfunc()">
+
+        <input type="text" id="b8" onclick="func_8(); checkfunc()">
+
+        <input type="text" id="b9" onclick="func_9(); checkfunc()">
+
+        <!-- Grid end here  -->
+
+        <br><br><br>
+        <!-- Button to reset game -->
+        <button id="reset" onclick="reset_func()">
+            RESET
+        </button>
+        <br><br>
+        <div id="won"></div>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+
+
+
+</html>
