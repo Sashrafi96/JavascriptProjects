@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,
+        * {
+            margin: auto;
+            background-color: aquamarine;
+            text-align: center;
+        }
+
         tr,
         td {
             border: 1px solid black;
-            padding: 2px;
+            padding: 10px;
             text-align: center;
         }
     </style>
@@ -18,7 +23,7 @@
 
 <body>
     <div>
-        <h1>Dynamically create table</h1>
+        <h1>Dynamically create table</h1><br><br>
         <button id="crtable" onclick="createtable()">Create table</button>
         <div>
             <table id="tab"></table>
