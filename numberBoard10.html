@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            padding: 2px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Dynamically create table</h1>
+        <button id="crtable" onclick="createtable()">Create table</button>
+        <div>
+            <table id="tab"></table>
+        </div>
+    </div>
+
+    <script>
+
+        function createtable() {
+            //alert("createTable");
+            let k = 100;
+            let table = document.getElementById("tab");
+            for (let i = 0; i < 10; i++) {
+                row = table.insertRow(i);
+                for (let j = 0; j < 10; j++) {
+                    cell = row.insertCell(j);
+                    if (i % 2 == 0) {
+                        cell.innerHTML = k;
+                        k--;
+                    } else {
+                        cell.innerHTML = k
+                        k++;
+                    }
+                }
+                if (i % 2 == 0) {
+                    k = k - 9;
+                } else {
+                    k = k - 11;
+                }
+                if (k < 0) {
+                    return;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
