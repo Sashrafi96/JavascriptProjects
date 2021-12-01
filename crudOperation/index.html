@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="style.css">
+    <script type='text/javascript' async defer src="index.js"></script>
+</head>
+
+<body>
+
+    <h2>JavaScript CRUD Example</h2> <br>
+    <div class="container">
+        <form autocomplete="off" onSubmit="event.preventDefault(); submitForm();">
+            <label class="text required">Full Name</label><br><input id="fname" type="text"><br>
+            <label class="text required">Email Id </label><br><input id="email" type="email"><br>
+            <label class="text">City</label><br><input id="city" type="text"><br>
+            <label class="text">Country</label><br><input id="country" type="text"><br><br>
+            <input class="submit" type="submit">
+            <!-- <input class="reset" type="button" value="Reset" onclick="resetForm()"> -->
+            <br>
+        </form>
+    </div>
+    <br>
+    <div>
+        <table class="list" id="table">
+
+            <tr>
+                <th>Full Name</th>
+                <th>Email Id</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
